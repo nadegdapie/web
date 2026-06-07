@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-ассистенты для программистов: GitHub Copilot, Codeium, Tabnine, Amazon CodeWhisperer.">
+    <title>AI-ассистенты — ИИ в веб-разработке</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.20/dist/98.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="light-theme">
+    <a href="#main-content" class="skip-link">Перейти к содержанию</a>
+    <header class="window" role="banner">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                Искусственный интеллект в веб-разработке Искусственный интеллект в веб-разработке
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Переключить тему" id="theme-toggle-header" class="theme-toggle-btn" title="Светлая / Тёмная тема">🌙</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <nav aria-label="Главное меню" class="main-nav">
+                <button class="burger-btn" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
+                </button>
+                <ul id="main-menu" class="menu-list" role="menubar">
+                    <li role="none"><a href="../index.html" role="menuitem">Главная</a></li>
+                    <li role="none"><a href="assistants.html" role="menuitem" class="active">AI-ассистенты</a></li>
+                    <li role="none"><a href="code-generation.html" role="menuitem">Генерация кода</a></li>
+                    <li role="none"><a href="llm-integration.html" role="menuitem">LLM-интеграция</a></li>
+                    <li role="none"><a href="ai-services.html" role="menuitem">AI-сервисы</a></li>
+                    <li role="none"><a href="tools.html" role="menuitem">Инструменты</a></li>
+                    <li role="none"><a href="ethics.html" role="menuitem">Этика и будущее</a></li>
+                    <li role="none"><a href="resources.html" role="menuitem">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout-grid">
+        <main id="main-content" class="window" role="main">
+            <div class="title-bar">
+                <div class="title-bar-text">AI-ассистенты</div>
+            </div>
+            <div class="window-body">
+                <h1 class="centered-heading">AI-ассистенты в веб-разработке</h1>
+                <picture>
+                    <source srcset="../img/ai-assistant.jpg" type="image/jpg">
+                    <img src="../img/ai-assistant.jpg" loading="lazy" width="500" height="280" class="content-image">
+                </picture>
+                <p>AI-ассистенты — это интеллектуальные инструменты, которые интегрируются в среду разработки и помогают программисту писать код быстрее и качественнее. Они анализируют контекст проекта, понимают комментарии и способны предлагать целые функции.</p>
+
+                <h2 class="centered-heading">Популярные AI-ассистенты</h2>
+                <h3>GitHub Copilot</h3>
+                <p>Разработан GitHub совместно с OpenAI. Использует модель Codex, интегрируется с VS Code, Visual Studio, JetBrains IDE и Neovim.</p>
+                <ul>
+                    <li>Понимает контекст проекта</li>
+                    <li>Поддерживает все популярные языки</li>
+                    <li>Copilot Chat для вопросов о коде</li>
+                    <li>Стоимость: $10/мес (индивидуальный), $19/мес (бизнес)</li>
+                </ul>
+
+                <h3>Codeium</h3>
+                <p>Бесплатный AI-ассистент с поддержкой 70+ языков. Делает акцент на конфиденциальности.</p>
+                <ul>
+                    <li>Полностью бесплатный для индивидуальных разработчиков</li>
+                    <li>Поддерживает 40+ редакторов и IDE</li>
+                    <li>Включает поиск по кодовой базе на естественном языке</li>
+                </ul>
+
+                <h3>Tabnine</h3>
+                <p>Один из пионеров рынка (с 2018 года). Возможность обучения на приватных репозиториях.</p>
+                <ul>
+                    <li>Локальное обучение (Enterprise)</li>
+                    <li>Строгие гарантии конфиденциальности</li>
+                    <li>Бесплатная версия с базовыми возможностями</li>
+                </ul>
+
+                <h3>Amazon CodeWhisperer</h3>
+                <p>Бесплатный ассистент от Amazon, оптимизирован для AWS.</p>
+                <ul>
+                    <li>Полностью бесплатный</li>
+                    <li>Глубокая интеграция с AWS</li>
+                    <li>Встроенная проверка безопасности кода</li>
+                </ul>
+
+                <div class="comparison-table">
+                    <h2 class="centered-heading">Сравнение AI-ассистентов</h2>
+                    <div class="sunken-panel">
+                        <table class="interactive">
+                            <caption>Сравнительная таблица AI-ассистентов</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Характеристика</th>
+                                    <th scope="col">GitHub Copilot</th>
+                                    <th scope="col">Codeium</th>
+                                    <th scope="col">Tabnine</th>
+                                    <th scope="col">CodeWhisperer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Цена (индивидуальная)</td><td>$10/мес</td><td>Бесплатно</td><td>Бесплатно (базовая)</td><td>Бесплатно</td></tr>
+                                <tr><td>Количество IDE</td><td>5+</td><td>40+</td><td>15+</td><td>10+</td></tr>
+                                <tr><td>Локальное обучение</td><td>Нет</td><td>Нет</td><td>Да (Enterprise)</td><td>Нет</td></tr>
+                                <tr><td>Чат-функциональность</td><td>Да</td><td>Да</td><td>Да</td><td>Нет</td></tr>
+                                <tr><td>Анализ безопасности</td><td>Нет</td><td>Нет</td><td>Нет</td><td>Да</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h2 class="centered-heading">Как AI-ассистент меняет процесс разработки?</h2>
+                <ol>
+                    <li><strong>Сокращение времени на шаблонный код:</strong> до 40-60% быстрее.</li>
+                    <li><strong>Снижение когнитивной нагрузки.</strong></li>
+                    <li><strong>Ускорение изучения новых технологий.</strong></li>
+                    <li><strong>Автоматическое создание тестов.</strong></li>
+                    <li><strong>Документирование кода.</strong></li>
+                </ol>
+
+                <h2 class="centered-heading">Лучшие практики</h2>
+                <ul>
+                    <li>Пишите понятные комментарии</li>
+                    <li>Всегда проверяйте сгенерированный код</li>
+                    <li>Используйте вместе со статическим анализом</li>
+                    <li>Не полагайтесь на AI в вопросах безопасности</li>
+                    <li>Изучайте предлагаемые решения</li>
+                </ul>
+
+                <h2 class="centered-heading">Будущее AI-ассистентов</h2>
+                <p>Эволюция от автодополнения к полноценным агентам, способным самостоятельно выполнять сложные задачи разработки.</p>
+            </div>
+        </main>
+
+        <aside class="window sidebar" role="complementary" aria-label="Боковая панель">
+            <div class="title-bar"><div class="title-bar-text"> Навигация по разделам</div></div>
+            <div class="window-body">
+                <ul class="sidebar-nav">
+                    <li><a href="../index.html"> Главная</a></li>
+                    <li><a href="assistants.html"> AI-ассистенты</a></li>
+                    <li><a href="code-generation.html"> Генерация кода</a></li>
+                    <li><a href="llm-integration.html"> LLM-интеграция</a></li>
+                    <li><a href="ai-services.html"> AI-сервисы</a></li>
+                    <li><a href="tools.html"> Инструменты</a></li>
+                    <li><a href="ethics.html"> Этика и будущее</a></li>
+                    <li><a href="resources.html"> Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="title-bar" style="margin-top: 16px;"><div class="title-bar-text"> Знаете ли вы?</div></div>
+            <div class="window-body">
+                <div class="banner">
+                    <p>GitHub Copilot был запущен в июне 2021 года и за первый год привлёк более 1,2 миллиона разработчиков.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="window status-footer" role="contentinfo">
+        <div class="status-bar">
+            <p class="status-bar-field">© 2026 ИИ в веб-разработке</p>
+            <p class="status-bar-field">📧 ai@web.ru</p>
+            <p class="status-bar-field"><a href="resources.html">🗺️ Карта сайта</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интеграция LLM в веб-приложения: Vercel AI SDK, LangChain, Ollama.">
+    <title>LLM-интеграция — ИИ в веб-разработке</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.20/dist/98.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="light-theme">
+    <a href="#main-content" class="skip-link">Перейти к содержанию</a>
+    <header class="window" role="banner">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                Искусственный интеллект в веб-разработке Искусственный интеллект в веб-разработке
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Переключить тему" id="theme-toggle-header" class="theme-toggle-btn" title="Светлая / Тёмная тема">🌙</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <nav aria-label="Главное меню" class="main-nav">
+                <button class="burger-btn" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
+                </button>
+                <ul id="main-menu" class="menu-list" role="menubar">
+                    <li role="none"><a href="../index.html" role="menuitem">Главная</a></li>
+                    <li role="none"><a href="assistants.html" role="menuitem">AI-ассистенты</a></li>
+                    <li role="none"><a href="code-generation.html" role="menuitem">Генерация кода</a></li>
+                    <li role="none"><a href="llm-integration.html" role="menuitem" class="active">LLM-интеграция</a></li>
+                    <li role="none"><a href="ai-services.html" role="menuitem">AI-сервисы</a></li>
+                    <li role="none"><a href="tools.html" role="menuitem">Инструменты</a></li>
+                    <li role="none"><a href="ethics.html" role="menuitem">Этика и будущее</a></li>
+                    <li role="none"><a href="resources.html" role="menuitem">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout-grid">
+        <main id="main-content" class="window" role="main">
+            <div class="title-bar"><div class="title-bar-text">LLM-интеграция</div></div>
+            <div class="window-body">
+                <h1 class="centered-heading">Интеграция LLM в веб-приложения</h1>
+                <img src="../img/LLM-server.jpg" alt="Архитектурная схема интеграции LLM" loading="lazy" width="500" height="280" class="content-image">
+                <p>LLM (GPT-4, Claude, Gemini, Llama) можно встроить в веб-приложение для создания чат-ботов, анализа текста, генерации контента и интеллектуального поиска.</p>
+
+                <h2 class="centered-heading">Основные способы интеграции</h2>
+                <h3>Vercel AI SDK</h3>
+                <p>Библиотека для React, Svelte, Vue с поддержкой стриминга и абстракцией над провайдерами.</p>
+                <ul><li>Стриминг ответов</li><li>Хуки useChat, useCompletion</li><li>Поддержка Edge Functions</li></ul>
+
+                <h3>LangChain.js</h3>
+                <p>Фреймворк для сложных LLM-приложений с цепочками, агентами и векторными БД.</p>
+                <ul><li>Цепочки и агенты</li><li>Интеграция с Pinecone, Weaviate</li><li>Модули памяти</li></ul>
+
+                <h3>Ollama</h3>
+                <p>Локальный запуск open-source LLM без облака. Поддерживает Llama, Mistral, Gemma.</p>
+                <ul><li>Полностью локально</li><li>REST API</li><li>GPU-ускорение</li></ul>
+
+                <div class="comparison-table">
+                    <h2 class="centered-heading">Сравнение подходов</h2>
+                    <div class="sunken-panel">
+                        <table class="interactive">
+                            <caption>Сравнение подходов к интеграции LLM</caption>
+                            <thead><tr><th>Подход</th><th>Сложность</th><th>Гибкость</th><th>Стриминг</th><th>Локальный запуск</th></tr></thead>
+                            <tbody>
+                                <tr><td>Vercel AI SDK</td><td>Низкая</td><td>Средняя</td><td>Да</td><td>Нет</td></tr>
+                                <tr><td>LangChain.js</td><td>Высокая</td><td>Очень высокая</td><td>Да</td><td>Частично</td></tr>
+                                <tr><td>Ollama</td><td>Средняя</td><td>Высокая</td><td>Да</td><td>Да</td></tr>
+                                <tr><td>Прямой API</td><td>Низкая</td><td>Низкая</td><td>Вручную</td><td>Нет</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h2 class="centered-heading">RAG: ключевой паттерн</h2>
+                <ol>
+                    <li><strong>Индексация:</strong> документы → эмбеддинги → векторная БД.</li>
+                    <li><strong>Поиск:</strong> запрос → эмбеддинг → ближайшие чанки.</li>
+                    <li><strong>Генерация:</strong> чанки + запрос → ответ LLM.</li>
+                </ol>
+
+                <h2 class="centered-heading">Примеры применения</h2>
+                <ul>
+                    <li>Чат-боты поддержки</li>
+                    <li>Генерация контента</li>
+                    <li>Анализ обратной связи</li>
+                    <li>Умный поиск</li>
+                    <li>Персонализация</li>
+                </ul>
+            </div>
+        </main>
+
+        <aside class="window sidebar" role="complementary" aria-label="Боковая панель">
+            <div class="title-bar"><div class="title-bar-text"> Навигация по разделам</div></div>
+            <div class="window-body">
+                <ul class="sidebar-nav">
+                    <li><a href="../index.html"> Главная</a></li>
+                    <li><a href="assistants.html"> AI-ассистенты</a></li>
+                    <li><a href="code-generation.html"> Генерация кода</a></li>
+                    <li><a href="llm-integration.html"> LLM-интеграция</a></li>
+                    <li><a href="ai-services.html"> AI-сервисы</a></li>
+                    <li><a href="tools.html"> Инструменты</a></li>
+                    <li><a href="ethics.html"> Этика и будущее</a></li>
+                    <li><a href="resources.html"> Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="title-bar" style="margin-top: 16px;"><div class="title-bar-text"> Знаете ли вы?</div></div>
+            <div class="window-body">
+                <div class="banner"><p>RAG был предложен Facebook AI Research в 2020 году и стал стандартом для LLM-приложений.</p></div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="window status-footer" role="contentinfo">
+        <div class="status-bar">
+            <p class="status-bar-field">© 2026 ИИ в веб-разработке</p>
+            <p class="status-bar-field">📧 ai@web.ru</p>
+            <p class="status-bar-field"><a href="resources.html">🗺️ Карта сайта</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

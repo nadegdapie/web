@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сравнительная таблица AI-инструментов: Copilot, v0.dev, Vercel AI SDK, Ollama, LangChain.">
+    <title>Инструменты — ИИ в веб-разработке</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.20/dist/98.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="light-theme">
+    <a href="#main-content" class="skip-link">Перейти к содержанию</a>
+    <header class="window" role="banner">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                Искусственный интеллект в веб-разработке Искусственный интеллект в веб-разработке
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Переключить тему" id="theme-toggle-header" class="theme-toggle-btn" title="Светлая / Тёмная тема">🌙</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <nav aria-label="Главное меню" class="main-nav">
+                <button class="burger-btn" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
+                </button>
+                <ul id="main-menu" class="menu-list" role="menubar">
+                    <li role="none"><a href="../index.html" role="menuitem">Главная</a></li>
+                    <li role="none"><a href="assistants.html" role="menuitem">AI-ассистенты</a></li>
+                    <li role="none"><a href="code-generation.html" role="menuitem">Генерация кода</a></li>
+                    <li role="none"><a href="llm-integration.html" role="menuitem">LLM-интеграция</a></li>
+                    <li role="none"><a href="ai-services.html" role="menuitem">AI-сервисы</a></li>
+                    <li role="none"><a href="tools.html" role="menuitem" class="active">Инструменты</a></li>
+                    <li role="none"><a href="ethics.html" role="menuitem">Этика и будущее</a></li>
+                    <li role="none"><a href="resources.html" role="menuitem">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout-grid">
+        <main id="main-content" class="window" role="main">
+            <div class="title-bar"><div class="title-bar-text">Инструменты</div></div>
+            <div class="window-body">
+                <h1 class="centered-heading">Популярные AI-инструменты: полное сравнение</h1>
+                <p>Рынок AI-инструментов для веб-разработки растёт экспоненциально. Инвестиции в 2024 году превысили $3 миллиарда.</p>
+
+                <div class="sunken-panel">
+                    <table class="interactive">
+                        <caption>Сравнительная таблица AI-инструментов (2025)</caption>
+                        <thead>
+                            <tr><th>Инструмент</th><th>Категория</th><th>Цена</th><th>Open Source</th><th>Применение</th><th>Интеграции</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>GitHub Copilot</td><td>Ассистент</td><td>$10/мес</td><td>Нет</td><td>Повседневное написание кода</td><td>VS Code, JetBrains</td></tr>
+                            <tr><td>v0.dev</td><td>Генерация UI</td><td>Freemium</td><td>Нет</td><td>React-компоненты</td><td>Vercel, Next.js</td></tr>
+                            <tr><td>Vercel AI SDK</td><td>LLM-интеграция</td><td>Бесплатно</td><td>Да</td><td>Чат-боты, AI-интерфейсы</td><td>React, Svelte, Vue</td></tr>
+                            <tr><td>Ollama</td><td>Локальные LLM</td><td>Бесплатно</td><td>Да</td><td>Конфиденциальные приложения</td><td>REST API</td></tr>
+                            <tr><td>LangChain.js</td><td>Фреймворк LLM</td><td>Бесплатно</td><td>Да</td><td>Сложные AI-приложения</td><td>Любые JS-фреймворки</td></tr>
+                            <tr><td>Codeium</td><td>Ассистент</td><td>Бесплатно</td><td>Частично</td><td>Бесплатная альтернатива Copilot</td><td>40+ IDE</td></tr>
+                            <tr><td>Cursor AI</td><td>Редактор + AI</td><td>$20/мес</td><td>Нет</td><td>AI-среда разработки</td><td>Расширения VS Code</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="centered-heading">Рекомендации по выбору</h2>
+                <h3>Для начинающих</h3>
+                <p>Codeium + ChatGPT (бесплатно) + Vercel AI SDK.</p>
+                <h3>Для профессионалов</h3>
+                <p>GitHub Copilot + Cursor AI + LangChain (бюджет ~$30-40/мес).</p>
+                <h3>Для предприятий</h3>
+                <p>Copilot Business + Tabnine Enterprise + Azure OpenAI Service.</p>
+
+                <h2 class="centered-heading">Метрики эффективности</h2>
+                <ul>
+                    <li>Время выполнения задач</li>
+                    <li>Процент принимаемого AI-кода</li>
+                    <li>Количество багов</li>
+                    <li>Скорость онбординга</li>
+                    <li>Удовлетворённость разработчиков</li>
+                </ul>
+            </div>
+        </main>
+
+        <aside class="window sidebar" role="complementary" aria-label="Боковая панель">
+            <div class="title-bar"><div class="title-bar-text"> Навигация по разделам</div></div>
+            <div class="window-body">
+                <ul class="sidebar-nav">
+                    <li><a href="../index.html"> Главная</a></li>
+                    <li><a href="assistants.html"> AI-ассистенты</a></li>
+                    <li><a href="code-generation.html"> Генерация кода</a></li>
+                    <li><a href="llm-integration.html"> LLM-интеграция</a></li>
+                    <li><a href="ai-services.html"> AI-сервисы</a></li>
+                    <li><a href="tools.html"> Инструменты</a></li>
+                    <li><a href="ethics.html"> Этика и будущее</a></li>
+                    <li><a href="resources.html"> Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="title-bar" style="margin-top: 16px;"><div class="title-bar-text"> Знаете ли вы?</div></div>
+            <div class="window-body">
+                <div class="banner"><p>По прогнозам Gartner, к 2028 году 75% разработчиков будут использовать AI-инструменты.</p></div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="window status-footer" role="contentinfo">
+        <div class="status-bar">
+            <p class="status-bar-field">© 2026 ИИ в веб-разработке</p>
+            <p class="status-bar-field">📧 ai@web.ru</p>
+            <p class="status-bar-field"><a href="resources.html">🗺️ Карта сайта</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
